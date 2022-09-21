@@ -1,0 +1,51 @@
+div.gallery {
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    width: 600px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+body{
+    height:100vh;
+    margin:0;
+    padding: 25px;
+    display:flex;
+    flex-direction:column;
+}
+
+header{
+    min-height:50px;
+}
+
+footer{
+    min-height:50px;
+    margin-top:auto;
+}
+
+.outer {
+    width: 100%;
+    text-align: center;
+}
+
+.inner {
+    display: inline-block;
+}
+
+div.buttons {
+    margin-top: 25px;
+}
+
+a.button-right {
+    margin-left: 10px;
+}
