@@ -1,5 +1,6 @@
 package com.voxeldev.webgalleryjsp;
 
+import com.voxeldev.webgalleryjsp.dao.ImagesRepositoryFileImpl;
 import com.voxeldev.webgalleryjsp.dao.ImagesRepositorySqlImpl;
 
 import javax.servlet.ServletException;
@@ -19,7 +20,7 @@ public class ImageAddServlet extends HttpServlet {
     
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        ImagesRepositorySqlImpl.getInstance().addImage(req.getParameter("imageUrl"));
+        ImagesRepositoryFileImpl.getInstance().addImage(req.getParameter("imageUrl"));
         resp.sendRedirect("/images");
     }
 }

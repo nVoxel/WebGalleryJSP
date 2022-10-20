@@ -18,8 +18,6 @@ public class ImagesRepositorySqlImpl implements ImagesRepository {
     
     private List<Image> images = null;
     
-    
-    
     public static ImagesRepositorySqlImpl getInstance() {
         if (imagesRepository == null) {
             imagesRepository = new ImagesRepositorySqlImpl();

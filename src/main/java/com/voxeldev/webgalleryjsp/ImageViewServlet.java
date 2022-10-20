@@ -1,5 +1,6 @@
 package com.voxeldev.webgalleryjsp;
 
+import com.voxeldev.webgalleryjsp.dao.ImagesRepositoryFileImpl;
 import com.voxeldev.webgalleryjsp.dao.ImagesRepositorySqlImpl;
 
 import javax.servlet.ServletException;
@@ -14,7 +15,7 @@ public class ImageViewServlet extends HttpServlet {
     
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.setAttribute("images", ImagesRepositorySqlImpl.getInstance().getImages());
+        req.setAttribute("images", ImagesRepositoryFileImpl.getInstance().getImages());
         req.getRequestDispatcher("/images.jsp").forward(req, resp);
     }
 }
